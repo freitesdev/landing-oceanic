@@ -99,9 +99,10 @@ img{
 }
 /* section b */
 .section-b{
-position:relative;
-background: url('../img/overlay.jpg') no-repeat bottom center/cover;
-height: 400px;
+    position:relative;
+    background: url('../img/overlay.jpg') no-repeat bottom center/cover;
+    height: 400px;
+    z-index: 0;
 }
 .section-b-inner{
 color: #fff;
@@ -114,6 +115,7 @@ text-align: center;
 margin: auto;
 max-width: 860px;
 padding: 5rem 0;
+z-index: 0;
 }
 .section-b-inner h3{
     font-size: 2rem;
@@ -278,9 +280,9 @@ footer{
     .whatsapp{
         display: none;
         color: #000;
-        z-index: 1;
-        width: 200px;
-        height: 260px;
+        z-index: 3;
+        width: 240px;
+        height: 300px;
         bottom: 60px;
         right: 45px;
         background: #fff;
@@ -315,9 +317,9 @@ footer{
         width: 95%;
         min-width: 95%;
         max-width: 95%;
-        height: 145px;
-        min-height: 145px;
-        max-height: 145px;
+        height: 180px;
+        min-height: 180px;
+        max-height: 180px;
     }
     .whatsapp label{
         color: #008c31;
@@ -331,7 +333,7 @@ footer{
         color: #fff;
         width: 95%;
         background-color: #008c31;
-        margin: 0 5px;
+        margin: 2px 5px;
         border-radius: 5px;
     }
     .whatsapp-toggle{
