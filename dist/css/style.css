@@ -299,6 +299,7 @@ footer{
         right: 10px;
         position: fixed;
         cursor: pointer;
+        z-index: 3;
     }
     #whatsapp:hover{
         transition: 0.3s;
