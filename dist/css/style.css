@@ -248,6 +248,10 @@ footer{
     color: #333;
     cursor: pointer;
     border-radius: 0 20px 20px 0;
+    z-index: 0;
+}
+#whatsapp, .whatsapp{
+    display: none;
 }
 /* media queries */
 @media(max-width: 700px){
@@ -262,10 +266,75 @@ footer{
         order:1;
     }
     .section-b-inner h2{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     footer .footer-inside{
         grid-template-columns: 1fr;
         text-align: center;
+    }
+    .section-d .details li{
+        text-align: left;
+    }
+    .whatsapp{
+        display: none;
+        color: #000;
+        z-index: 1;
+        width: 200px;
+        height: 260px;
+        bottom: 60px;
+        right: 45px;
+        background: #fff;
+        position: fixed;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.7);
+        font-size: 0.8rem;
+    }
+    #whatsapp{
+        display: unset;
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        position: fixed;
+        cursor: pointer;
+    }
+    #whatsapp:hover{
+        transition: 0.3s;
+        width: 41px;
+        height: 41px;
+    }
+    .whatsapp img:active{
+        transform: scale(0.9);
+    }
+    .whatsapp input{
+        margin: 0 5px;
+        width: 95%;
+    }
+    .whatsapp textarea{
+        margin: 0 5px;
+        width: 95%;
+        min-width: 95%;
+        max-width: 95%;
+        height: 145px;
+        min-height: 145px;
+        max-height: 145px;
+    }
+    .whatsapp label{
+        color: #008c31;
+        margin: 0 5px;
+    }
+    .whatsapp h3{
+        color: #008c31;
+        text-align: center;
+    }
+    .whatsapp button{
+        color: #fff;
+        width: 95%;
+        background-color: #008c31;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+    .whatsapp-toggle{
+        display: block;
     }
 }
