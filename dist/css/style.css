@@ -310,10 +310,13 @@ footer{
         transform: scale(0.9);
     }
     .whatsapp input{
+        border-radius: 5px;
         margin: 0 5px;
         width: 95%;
+        background-color: rgba(0,0,0, 0.1);
     }
     .whatsapp textarea{
+        border-radius: 5px;
         margin: 0 5px;
         width: 95%;
         min-width: 95%;
@@ -321,6 +324,7 @@ footer{
         height: 180px;
         min-height: 180px;
         max-height: 180px;
+        background-color: rgba(0,0,0, 0.1);
     }
     .whatsapp label{
         color: #008c31;
